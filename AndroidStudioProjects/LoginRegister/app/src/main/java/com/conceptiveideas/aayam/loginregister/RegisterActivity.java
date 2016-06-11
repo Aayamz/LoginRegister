@@ -1,6 +1,5 @@
 package com.conceptiveideas.aayam.loginregister;
 
-import android.preference.EditTextPreference;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,14 +13,18 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        //setting up Variables
-        final EditText edAge;
-        final EditText edName;
-        final EditText edUsername;
-        final EditText edPassword;
-        final Button bRegBtn;
+        final EditText edAge = (EditText) findViewById(R.id.edAge);
+        final EditText edName = (EditText) findViewById(R.id.edName);
+        final EditText edUsername = (EditText) findViewById(R.id.edUsername);
+        final EditText edPassword = (EditText) findViewById(R.id.edPassword);
+        final Button bRegBtn = (Button) findViewById(R.id.bRegBtn);
 
+       bRegBtn.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
 
+           }
+       });
 
     }
 

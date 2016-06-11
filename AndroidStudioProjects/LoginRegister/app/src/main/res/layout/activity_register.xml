@@ -62,7 +62,6 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/bRegBtn"
-        android:onClick="RegisterDo"
         android:layout_below="@+id/edAge"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
