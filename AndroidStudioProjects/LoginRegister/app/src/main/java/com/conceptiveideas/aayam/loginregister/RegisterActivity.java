@@ -1,10 +1,9 @@
 package com.conceptiveideas.aayam.loginregister;
 
 import android.content.Intent;
-import android.os.StrictMode;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,11 +33,10 @@ public class RegisterActivity extends AppCompatActivity {
            public void onClick(View v) {
                final String name = edName.getText().toString();
                final String username = edUsername.getText().toString();
-               final String age = edAge.getText().toString();
+               final int age = Integer.parseInt(edAge.getText().toString());
                final String password = edPassword.getText().toString();
 
                Response.Listener<String> responseListener = new Response.Listener<String>(){
-
                    @Override
                    public void onResponse(String response) {
                        try {
@@ -55,10 +53,8 @@ public class RegisterActivity extends AppCompatActivity {
                        }catch (JSONException e){
                            e.printStackTrace();
                        }
-
                    }
                };
-
                RegisterRequest registerRequest = new RegisterRequest(name,username,age,password,responseListener);
                RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                queue.add(registerRequest);
