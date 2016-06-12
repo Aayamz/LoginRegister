@@ -9,33 +9,47 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="@dimen/img_width_height"
-            android:layout_height="@dimen/img_width_height"
-            android:src="@drawable/ic_movie" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/slide_2_title"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_title"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:paddingLeft="@dimen/desc_padding"
-            android:paddingRight="@dimen/desc_padding"
-            android:text="@string/slide_2_desc"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/slide_desc" />
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/desc_padding"
+        android:paddingRight="@dimen/desc_padding"
+        android:text="@string/slide_2_desc"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/slide_desc"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slide_2_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/slide_title"
+        android:textStyle="bold"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:background="@drawable/ic_become" />
 
 
 </RelativeLayout>
