@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.conceptiveideas.aayam.expertmelogin.MainActivity"
+    tools:context="com.conceptiveideas.aayam.expertme.MainActivity"
     android:background="@color/bg_screen3">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -16,7 +16,15 @@
         <FrameLayout
             android:id="@+id/fragment_frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="@color/dim_foreground_material_light" />
+        </FrameLayout>
 
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

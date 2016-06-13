@@ -5,6 +5,9 @@
     import android.content.SharedPreferences;
     import android.support.v7.app.AppCompatActivity;
     import android.os.Bundle;
+    import android.text.Html;
+    import android.text.method.LinkMovementMethod;
+    import android.widget.TextView;
 
     import com.conceptiveideas.aayam.expertme.Constants;
     import com.conceptiveideas.aayam.expertme.LoginFragment;
@@ -21,6 +24,10 @@
             setContentView(R.layout.activity_main);
             pref = getPreferences(0);
             initFragment();
+            TextView Link = (TextView) findViewById(R.id.textView4);
+            Link.setText(Html.fromHtml(
+                    "Made By <a href=\"http://conceptiveideas.com\">Conceptive Ideas</a>"));
+            Link.setMovementMethod(LinkMovementMethod.getInstance());
         }
 
         private void initFragment(){

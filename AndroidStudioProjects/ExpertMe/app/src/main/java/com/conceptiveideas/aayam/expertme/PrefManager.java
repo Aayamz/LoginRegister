@@ -9,10 +9,10 @@ public class PrefManager {
     SharedPreferences.Editor editor;
     Context _context;
 
-    //shared Pref Mode
+
     int PRIVATE_MODE = 0;
 
-    //shared pref File name
+
     private static final String PREF_NAME = "Expert Me - Welcome";
     private  static final String IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch";
 

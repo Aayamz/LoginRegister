@@ -2,7 +2,7 @@ package com.conceptiveideas.aayam.expertme;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://192.168.0.106/";
+    public static final String BASE_URL = "http://conceptiveideas.16mb.com/";
     public static final String REGISTER_OPERATION = "register";
     public static final String LOGIN_OPERATION = "login";
     public static final String CHANGE_PASSWORD_OPERATION = "chgPass";

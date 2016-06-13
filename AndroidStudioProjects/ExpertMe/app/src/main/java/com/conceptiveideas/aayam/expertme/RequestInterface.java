@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 
 public interface RequestInterface {
 
-    @POST("Android/")
+    @POST("/")
     Call<ServerResponse> operation(@Body ServerRequest request);
 
 }
